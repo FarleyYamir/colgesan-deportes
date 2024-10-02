@@ -7,7 +7,9 @@ const dir_front = "frontend/build"
 
 app.use(Express.static(dir_front))
 
-app.listen('5000', function(){
+const port = process.env.PORT || 3000
+
+app.listen(port, function(){
     console.log("Server has started")
 })
 
